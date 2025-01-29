@@ -16,7 +16,7 @@ namespace OOP_Week1
 
             // Calculate the sum of the random numbers and print it
             int sum = ComputeSum(randomNumbers);
-            Console.WriteLine($"Sum of all numbers: {sum}");
+            Console.WriteLine($"\nSum of all numbers: {sum}");
 
             // Get and diplay histogram
             int[] histogram = ComputeHistogram(randomNumbers);
@@ -28,13 +28,14 @@ namespace OOP_Week1
 
 
             // Pause the console so the user can see it
-            Console.WriteLine("Press any key to exit...");
+            Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();
         }
 
         
         static void DisplaySortedList(int[] sorted_list)
         {
+            Console.WriteLine("\nSorted list:");
             foreach (int number in sorted_list)
             {
                 Console.WriteLine(number);
@@ -67,7 +68,7 @@ namespace OOP_Week1
 
         static void DispayHistogram(int[] histogram)
         {
-            Console.WriteLine("Histogram (Class : Frequency):");
+            Console.WriteLine("\nHistogram (Class : Frequency):");
             int binStart = 1;
             int binEnd = 100;
 
